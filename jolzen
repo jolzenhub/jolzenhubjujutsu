@@ -1,0 +1,247 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "JolzenHUB JUJUTSU LEGACY👳‍♂️✈🏢🏢", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Spammer",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Toggle 1 variables
+local toggleActive1 = false
+local toggleLoop1 = nil
+
+-- Function to fire the first remote server function
+local function fireRemote1()
+    game:GetService("ReplicatedStorage").CharacterEvents:FindFirstChild("Ten Shadows").ZMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Toad Spam🐸",
+    Default = false,
+    Callback = function(Value)
+        toggleActive1 = Value  -- Update toggleActive1 variable
+        
+        if toggleActive1 and not toggleLoop1 then
+            -- Start the loop if it's not already running
+            toggleLoop1 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive1 then
+                    fireRemote1()  -- Fire the first remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop1:Disconnect()
+                    toggleLoop1 = nil
+                end
+            end)
+        elseif not toggleActive1 and toggleLoop1 then
+            -- Turn off the loop if it's running
+            toggleLoop1:Disconnect()
+            toggleLoop1 = nil
+        end
+    end    
+})
+
+-- Toggle 2 variables
+local toggleActive2 = false
+local toggleLoop2 = nil
+
+-- Function to fire the second remote server function
+local function fireRemote2()
+    game:GetService("ReplicatedStorage").CharacterEvents.Sukuna.VMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Malevelent shrine spam⛩️",
+    Default = false,
+    Callback = function(Value)
+        toggleActive2 = Value  -- Update toggleActive2 variable
+        
+        if toggleActive2 and not toggleLoop2 then
+            -- Start the loop if it's not already running
+            toggleLoop2 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive2 then
+                    fireRemote2()  -- Fire the second remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop2:Disconnect()
+                    toggleLoop2 = nil
+                end
+            end)
+        elseif not toggleActive2 and toggleLoop2 then
+            -- Turn off the loop if it's running
+            toggleLoop2:Disconnect()
+            toggleLoop2 = nil
+        end
+    end    
+})
+
+-- Toggle 3 variables
+local toggleActive3 = false
+local toggleLoop3 = nil
+
+-- Function to fire the third remote server function
+local function fireRemote3()
+    game:GetService("ReplicatedStorage").CharacterEvents.Sukuna.ZMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Cleave Spam🌀",
+    Default = false,
+    Callback = function(Value)
+        toggleActive3 = Value  -- Update toggleActive3 variable
+        
+        if toggleActive3 and not toggleLoop3 then
+            -- Start the loop if it's not already running
+            toggleLoop3 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive3 then
+                    fireRemote3()  -- Fire the third remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop3:Disconnect()
+                    toggleLoop3 = nil
+                end
+            end)
+        elseif not toggleActive3 and toggleLoop3 then
+            -- Turn off the loop if it's running
+            toggleLoop3:Disconnect()
+            toggleLoop3 = nil
+        end
+    end    
+})
+
+-- Toggle 4 variables
+local toggleActive4 = false
+local toggleLoop4 = nil
+
+-- Function to fire the fourth remote server function
+local function fireRemote4()
+    game:GetService("ReplicatedStorage").CharacterEvents:FindFirstChild("Cursed Speech").VMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Cursed Speech Spam🗣️",
+    Default = false,
+    Callback = function(Value)
+        toggleActive4 = Value  -- Update toggleActive4 variable
+        
+        if toggleActive4 and not toggleLoop4 then
+            -- Start the loop if it's not already running
+            toggleLoop4 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive4 then
+                    fireRemote4()  -- Fire the fourth remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop4:Disconnect()
+                    toggleLoop4 = nil
+                end
+            end)
+        elseif not toggleActive4 and toggleLoop4 then
+            -- Turn off the loop if it's running
+            toggleLoop4:Disconnect()
+            toggleLoop4 = nil
+        end
+    end    
+})
+
+-- Toggle 5 variables
+local toggleActive5 = false
+local toggleLoop5 = nil
+
+-- Function to fire the fifth remote server function
+local function fireRemote5()
+    game:GetService("ReplicatedStorage").CharacterEvents.Infinity.CMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Infinity CMove Spam🌀",
+    Default = false,
+    Callback = function(Value)
+        toggleActive5 = Value  -- Update toggleActive5 variable
+        
+        if toggleActive5 and not toggleLoop5 then
+            -- Start the loop if it's not already running
+            toggleLoop5 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive5 then
+                    fireRemote5()  -- Fire the fifth remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop5:Disconnect()
+                    toggleLoop5 = nil
+                end
+            end)
+        elseif not toggleActive5 and toggleLoop5 then
+            -- Turn off the loop if it's running
+            toggleLoop5:Disconnect()
+            toggleLoop5 = nil
+        end
+    end    
+})
+
+-- Toggle 6 variables
+local toggleActive6 = false
+local toggleLoop6 = nil
+
+-- Function to fire the sixth remote server function
+local function fireRemote6()
+    game:GetService("ReplicatedStorage").CharacterEvents.Infinity.VMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Infinity VMove Spam🌀",
+    Default = false,
+    Callback = function(Value)
+        toggleActive6 = Value  -- Update toggleActive6 variable
+        
+        if toggleActive6 and not toggleLoop6 then
+            -- Start the loop if it's not already running
+            toggleLoop6 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive6 then
+                    fireRemote6()  -- Fire the sixth remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop6:Disconnect()
+                    toggleLoop6 = nil
+                end
+            end)
+        elseif not toggleActive6 and toggleLoop6 then
+            -- Turn off the loop if it's running
+            toggleLoop6:Disconnect()
+            toggleLoop6 = nil
+        end
+    end    
+})
+
+-- Toggle 7 variables
+local toggleActive7 = false
+local toggleLoop7 = nil
+
+-- Function to fire the seventh remote server function
+local function fireRemote7()
+    game:GetService("ReplicatedStorage").CharacterEvents.Infinity.VMove:FireServer()
+end
+
+Tab:AddToggle({
+    Name = "Infinity VMove Spam 2🌀",
+    Default = false,
+    Callback = function(Value)
+        toggleActive7 = Value  -- Update toggleActive7 variable
+        
+        if toggleActive7 and not toggleLoop7 then
+            -- Start the loop if it's not already running
+            toggleLoop7 = game:GetService("RunService").Heartbeat:Connect(function()
+                if toggleActive7 then
+                    fireRemote7()  -- Fire the seventh remote
+                    wait()  -- Adjust the interval as needed
+                else
+                    toggleLoop7:Disconnect()
+                    toggleLoop7 = nil
+                end
+            end)
+        elseif not toggleActive7 and toggleLoop7 then
+            -- Turn off the loop if it's running
+            toggleLoop7:Disconnect()
+            toggleLoop7 = nil
+        end
+    end    
+})
